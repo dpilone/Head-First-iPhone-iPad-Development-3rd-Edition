@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)postItButtonPressed:(id)sender;
+
 @end
