@@ -23,6 +23,7 @@
 		BC2AB9E9162501D8000A9076 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2AB9C4162501D8000A9076 /* Foundation.framework */; };
 		BC2AB9F1162501D8000A9076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9EF162501D8000A9076 /* InfoPlist.strings */; };
 		BC2AB9F4162501D8000A9076 /* MarcoPolloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9F3162501D8000A9076 /* MarcoPolloTests.m */; };
+		BC2ABA16162511C0000A9076 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2ABA15162511C0000A9076 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BC2AB9F0162501D8000A9076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC2AB9F2162501D8000A9076 /* MarcoPolloTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarcoPolloTests.h; sourceTree = "<group>"; };
 		BC2AB9F3162501D8000A9076 /* MarcoPolloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarcoPolloTests.m; sourceTree = "<group>"; };
+		BC2ABA15162511C0000A9076 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2ABA16162511C0000A9076 /* Social.framework in Frameworks */,
 				BC2AB9C3162501D8000A9076 /* UIKit.framework in Frameworks */,
 				BC2AB9C5162501D8000A9076 /* Foundation.framework in Frameworks */,
 				BC2AB9C7162501D8000A9076 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		BC2AB9B3162501D8000A9076 = {
 			isa = PBXGroup;
 			children = (
+				BC2ABA15162511C0000A9076 /* Social.framework */,
 				BC2AB9C8162501D8000A9076 /* MarcoPollo */,
 				BC2AB9EC162501D8000A9076 /* MarcoPolloTests */,
 				BC2AB9C1162501D8000A9076 /* Frameworks */,
@@ -446,6 +450,7 @@
 				BC2AB9F9162501D8000A9076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC2AB9FA162501D8000A9076 /* Build configuration list for PBXNativeTarget "MarcoPolloTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +459,7 @@
 				BC2AB9FC162501D8000A9076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
