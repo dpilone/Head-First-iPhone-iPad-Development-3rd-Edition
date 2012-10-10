@@ -55,6 +55,9 @@
                             <constraint firstItem="8Id-RN-2H2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ph0-6w-e2J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tweetTextView" destination="Qgh-HC-DOu" id="A80-WD-QgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +71,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="postItButtonPressed:"/>
+                <relationship kind="outlet" name="tweetTextView" candidateClass="UITextView"/>
             </relationships>
         </class>
     </classes>
