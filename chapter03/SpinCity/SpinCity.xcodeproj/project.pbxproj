@@ -19,6 +19,7 @@
 		BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831A16504B6800086810 /* MainStoryboard.storyboard */; };
 		BCC5831F16504B6800086810 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5831E16504B6800086810 /* MasterViewController.m */; };
 		BCC5832216504B6800086810 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832116504B6800086810 /* DetailViewController.m */; };
+		BCC5832E1656969F00086810 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832D1656969F00086810 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		BCC5831E16504B6800086810 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BCC5832016504B6800086810 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BCC5832116504B6800086810 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BCC5832C1656969F00086810 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		BCC5832D1656969F00086810 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		BCC5830816504B6800086810 /* SpinCity */ = {
 			isa = PBXGroup;
 			children = (
+				BCC5832C1656969F00086810 /* Album.h */,
+				BCC5832D1656969F00086810 /* Album.m */,
 				BCC5831116504B6800086810 /* AppDelegate.h */,
 				BCC5831216504B6800086810 /* AppDelegate.m */,
 				BCC5831A16504B6800086810 /* MainStoryboard.storyboard */,
@@ -182,6 +187,7 @@
 				BCC5831316504B6800086810 /* AppDelegate.m in Sources */,
 				BCC5831F16504B6800086810 /* MasterViewController.m in Sources */,
 				BCC5832216504B6800086810 /* DetailViewController.m in Sources */,
+				BCC5832E1656969F00086810 /* Album.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
