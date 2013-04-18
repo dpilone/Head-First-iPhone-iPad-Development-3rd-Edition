@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2DBCB5169BC75C00DD0411 /* Albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2DBCB4169BC75C00DD0411 /* Albums.plist */; };
 		BCC5830316504B6800086810 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830216504B6800086810 /* UIKit.framework */; };
 		BCC5830516504B6800086810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830416504B6800086810 /* Foundation.framework */; };
 		BCC5830716504B6800086810 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830616504B6800086810 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC2DBCB4169BC75C00DD0411 /* Albums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Albums.plist; sourceTree = "<group>"; };
 		BCC582FE16504B6800086810 /* SpinCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC5830216504B6800086810 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCC5830416504B6800086810 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +99,7 @@
 			children = (
 				BCC5832F16569A2800086810 /* AlbumDataController.h */,
 				BCC5833016569A2800086810 /* AlbumDataController.m */,
+				BC2DBCB4169BC75C00DD0411 /* Albums.plist */,
 				BCC5833E1656E1D200086810 /* AlbumTableViewCell.h */,
 				BCC5833F1656E1D200086810 /* AlbumTableViewCell.m */,
 				BCC5832C1656969F00086810 /* Album.h */,
@@ -183,6 +186,7 @@
 				BCC5831716504B6800086810 /* Default@2x.png in Resources */,
 				BCC5831916504B6800086810 /* Default-568h@2x.png in Resources */,
 				BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */,
+				BC2DBCB5169BC75C00DD0411 /* Albums.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

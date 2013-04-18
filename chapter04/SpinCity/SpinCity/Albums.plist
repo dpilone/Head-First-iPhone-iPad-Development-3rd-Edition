@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Infected Splinter</string>
+		<key>artist</key>
+		<string>Boppin&apos; Beavers</string>
+		<key>summary</key>
+		<string>Awesome album with a hint of Oak.</string>
+		<key>price</key>
+		<real>9.99</real>
+		<key>locationInStore</key>
+		<string>Section F</string>
+	</dict>
+</array>
+</plist>
