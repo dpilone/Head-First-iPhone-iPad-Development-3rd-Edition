@@ -27,6 +27,7 @@
 		DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD21725CFDB00F9B4BC /* CoreData.framework */; };
 		DA776C041725CFDC00F9B4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA776C021725CFDC00F9B4BC /* InfoPlist.strings */; };
 		DA776C071725CFDC00F9B4BC /* GilligizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C061725CFDC00F9B4BC /* GilligizerTests.m */; };
+		DA776C1217264B9B00F9B4BC /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C1117264B9B00F9B4BC /* Show.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		DA776C031725CFDC00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA776C051725CFDC00F9B4BC /* GilligizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GilligizerTests.h; sourceTree = "<group>"; };
 		DA776C061725CFDC00F9B4BC /* GilligizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GilligizerTests.m; sourceTree = "<group>"; };
+		DA776C1017264B9B00F9B4BC /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		DA776C1117264B9B00F9B4BC /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				DA776BEF1725CFDB00F9B4BC /* DetailViewController.h */,
 				DA776BF01725CFDB00F9B4BC /* DetailViewController.m */,
 				DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */,
+				DA776C1017264B9B00F9B4BC /* Show.h */,
+				DA776C1117264B9B00F9B4BC /* Show.m */,
 				DA776BD51725CFDB00F9B4BC /* Supporting Files */,
 			);
 			path = Gilligizer;
@@ -289,6 +294,7 @@
 				DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */,
 				DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */,
 				DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */,
+				DA776C1217264B9B00F9B4BC /* Show.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

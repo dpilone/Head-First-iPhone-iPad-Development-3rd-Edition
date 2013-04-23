@@ -37,11 +37,11 @@
 {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-//        self.titleField.text = [self.detailItem valueForKey:@"title"];
-//        self.episodeIDField.text = [NSString stringWithFormat:@"%d", [[self.detailItem valueForKey:@"episodeID"] integerValue]];
-//        self.descriptionView.text = [self.detailItem valueForKey:@"desc"];
-//        self.firstRunSegmentedControl.selectedSegmentIndex = [[self.detailItem valueForKey:@"firstRun"] boolValue];
-//        self.showTimeLabel.text = [[self.detailItem valueForKey:@"showTime"] description];
+        self.titleField.text = [self.detailItem valueForKey:@"title"];
+        self.episodeIDField.text = [NSString stringWithFormat:@"%d", [[self.detailItem valueForKey:@"episodeID"] integerValue]];
+        self.descriptionView.text = [self.detailItem valueForKey:@"desc"];
+        self.firstRunSegmentedControl.selectedSegmentIndex = [[self.detailItem valueForKey:@"firstRun"] boolValue];
+        self.showTimeLabel.text = [[self.detailItem valueForKey:@"showTime"] description];
     }
 }
 
@@ -62,24 +62,24 @@
 
 - (IBAction)textFieldEditingChanged:(id)sender
 {
-//    if ([sender isEqual:self.titleField]) {
-//        [self.detailItem setValue:self.titleField.text forKey:@"title"];
-//    }
-//    else {
-//        [self.detailItem setValue:[NSNumber numberWithInteger:[self.episodeIDField.text integerValue]] forKey:@"episodeID"];
-//    }
+    if ([sender isEqual:self.titleField]) {
+        [self.detailItem setValue:self.titleField.text forKey:@"title"];
+    }
+    else {
+        [self.detailItem setValue:[NSNumber numberWithInteger:[self.episodeIDField.text integerValue]] forKey:@"episodeID"];
+    }
 }
 
 - (IBAction)newEpisodeValueChanged:(id)sender
 {
-//    [self.detailItem setValue:[NSNumber numberWithBool:self.firstRunSegmentedControl.selectedSegmentIndex] forKey:@"firstRun"];
+    [self.detailItem setValue:[NSNumber numberWithBool:self.firstRunSegmentedControl.selectedSegmentIndex] forKey:@"firstRun"];
 }
 
 #pragma mark - UITextFieldDelegate
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-//    [self.detailItem setValue:textView.text forKey:@"desc"];
+    [self.detailItem setValue:textView.text forKey:@"desc"];
 }
 
 @end
