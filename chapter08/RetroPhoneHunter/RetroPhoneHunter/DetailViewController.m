@@ -36,7 +36,10 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        self.nameField.text = self.detailItem.name;
+        self.cityField.text = self.detailItem.city;
+        self.notesView.text = self.detailItem.notes;
+        self.imageView.image = [UIImage imageWithContentsOfFile:self.detailItem.imagePath];
     }
 }
 
@@ -67,6 +70,21 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+- (IBAction)nameFieldEditingChanged:(id)sender
+{
+    self.detailItem.name = self.nameField.text;
+}
+
+- (IBAction)cityFieldEditingChanged:(id)sender
+{
+    self.detailItem.city = self.cityField.text;
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    self.detailItem.notes = self.notesView.text;
 }
 
 @end

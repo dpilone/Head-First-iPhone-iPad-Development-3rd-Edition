@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+#import "PhoneBooth.h"
 
-@property (strong, nonatomic) id detailItem;
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) PhoneBooth * detailItem;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *cityField;
+@property (weak, nonatomic) IBOutlet UITextView *notesView;
+- (IBAction)nameFieldEditingChanged:(id)sender;
+- (IBAction)cityFieldEditingChanged:(id)sender;
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA50BEA2173AFC8C0019907D /* PhoneBooth.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50BEA1173AFC8C0019907D /* PhoneBooth.m */; };
 		DA86FFBB17375E8F006E7598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86FFBA17375E8F006E7598 /* UIKit.framework */; };
 		DA86FFBD17375E8F006E7598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86FFBC17375E8F006E7598 /* Foundation.framework */; };
 		DA86FFBF17375E8F006E7598 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86FFBE17375E8F006E7598 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA50BEA0173AFC8C0019907D /* PhoneBooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneBooth.h; sourceTree = "<group>"; };
+		DA50BEA1173AFC8C0019907D /* PhoneBooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneBooth.m; sourceTree = "<group>"; };
 		DA86FFB717375E8F006E7598 /* RetroPhoneHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPhoneHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA86FFBA17375E8F006E7598 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA86FFBC17375E8F006E7598 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +139,8 @@
 				DA86FFDD17375E8F006E7598 /* DetailViewController.h */,
 				DA86FFDE17375E8F006E7598 /* DetailViewController.m */,
 				DA86FFD717375E8F006E7598 /* RetroPhoneHunter.xcdatamodeld */,
+				DA50BEA0173AFC8C0019907D /* PhoneBooth.h */,
+				DA50BEA1173AFC8C0019907D /* PhoneBooth.m */,
 				DA86FFC317375E8F006E7598 /* Supporting Files */,
 			);
 			path = RetroPhoneHunter;
@@ -289,6 +294,7 @@
 				DA86FFD917375E8F006E7598 /* RetroPhoneHunter.xcdatamodeld in Sources */,
 				DA86FFDC17375E8F006E7598 /* MasterViewController.m in Sources */,
 				DA86FFDF17375E8F006E7598 /* DetailViewController.m in Sources */,
+				DA50BEA2173AFC8C0019907D /* PhoneBooth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +477,7 @@
 				DA86FFFA17375E8F006E7598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA86FFFB17375E8F006E7598 /* Build configuration list for PBXNativeTarget "RetroPhoneHunterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				DA86FFFD17375E8F006E7598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
