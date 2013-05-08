@@ -87,4 +87,45 @@
     self.detailItem.notes = self.notesView.text;
 }
 
+- (IBAction)takePictureButtonPressed:(id)sender
+{
+    NSLog(@"Taking a picture...");
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera | UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.allowsEditing = YES;
+    picker.delegate = self;
+    
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+#pragma mark -
+#pragma mark UIImagePickerControllerDelegate methods
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // Construct the path to the file in our Documents Directory.
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *uniqueFilename = [[NSUUID UUID] UUIDString];
+    NSString *imagePath = [documentsDirectory stringByAppendingPathComponent:uniqueFilename];
+    
+    // Get the image from the picker and write it to disk.
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    [UIImagePNGRepresentation(image) writeToFile:imagePath atomically:YES];
+    
+    // Save the path to the image in our model so that it can be retrieved later.
+    self.detailItem.imagePath = imagePath;
+    
+    // Update the image view.
+    self.imageView.image = image;
+    
+    // Dismiss the picker.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    // Dismiss the picker.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

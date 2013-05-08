@@ -10,7 +10,7 @@
 
 #import "PhoneBooth.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) PhoneBooth * detailItem;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
 - (IBAction)nameFieldEditingChanged:(id)sender;
 - (IBAction)cityFieldEditingChanged:(id)sender;
+- (IBAction)takePictureButtonPressed:(id)sender;
 
 @end
