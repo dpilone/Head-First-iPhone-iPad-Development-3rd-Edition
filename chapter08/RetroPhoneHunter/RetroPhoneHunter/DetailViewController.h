@@ -10,7 +10,9 @@
 
 #import "PhoneBooth.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate,
+                                                    UINavigationControllerDelegate, UIImagePickerControllerDelegate,
+                                                    UIPopoverControllerDelegate>
 
 @property (strong, nonatomic) PhoneBooth * detailItem;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

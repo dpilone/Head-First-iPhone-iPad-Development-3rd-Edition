@@ -10,6 +10,8 @@
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@property (strong, nonatomic) UIPopoverController *imagePickerPopoverController;
+
 - (void)configureView;
 @end
 
@@ -95,7 +97,12 @@
     picker.allowsEditing = YES;
     picker.delegate = self;
     
-    [self presentViewController:picker animated:YES completion:nil];
+    self.imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
+    self.imagePickerPopoverController.delegate = self;
+    [self.imagePickerPopoverController presentPopoverFromRect:((UIButton *)sender).frame
+                                                       inView:self.view
+                                     permittedArrowDirections:UIPopoverArrowDirectionLeft
+                                                     animated:YES];
 }
 
 #pragma mark -
@@ -118,14 +125,25 @@
     // Update the image view.
     self.imageView.image = image;
     
-    // Dismiss the picker.
-    [self dismissViewControllerAnimated:YES completion:nil];
+    // Dismiss the picker by dismissing our popover controller.
+    [self.imagePickerPopoverController dismissPopoverAnimated:YES];
+    self.imagePickerPopoverController = nil;
+    
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    // Dismiss the picker.
-    [self dismissViewControllerAnimated:YES completion:nil];
+    // Dismiss the picker by dismissing our popover controller.
+    [self.imagePickerPopoverController dismissPopoverAnimated:YES];
+    self.imagePickerPopoverController = nil;
+}
+
+#pragma mark -
+#pragma mark UIPopoverControllerDelegate methods
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.imagePickerPopoverController = nil;
 }
 
 @end
