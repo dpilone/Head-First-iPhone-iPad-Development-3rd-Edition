@@ -12,13 +12,14 @@
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate,
                                                     UINavigationControllerDelegate, UIImagePickerControllerDelegate,
-                                                    UIPopoverControllerDelegate>
+                                                    UIPopoverControllerDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) PhoneBooth * detailItem;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *cityField;
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
+@property (weak, nonatomic) IBOutlet UIButton *takePictureButton;
 - (IBAction)nameFieldEditingChanged:(id)sender;
 - (IBAction)cityFieldEditingChanged:(id)sender;
 - (IBAction)takePictureButtonPressed:(id)sender;

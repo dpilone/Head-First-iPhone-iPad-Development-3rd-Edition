@@ -92,17 +92,27 @@
 - (IBAction)takePictureButtonPressed:(id)sender
 {
     NSLog(@"Taking a picture...");
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera | UIImagePickerControllerSourceTypePhotoLibrary;
-    picker.allowsEditing = YES;
-    picker.delegate = self;
-    
-    self.imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
-    self.imagePickerPopoverController.delegate = self;
-    [self.imagePickerPopoverController presentPopoverFromRect:((UIButton *)sender).frame
-                                                       inView:self.view
-                                     permittedArrowDirections:UIPopoverArrowDirectionLeft
-                                                     animated:YES];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        NSLog(@"This device has a camera. Asking the user what they want to use.");
+        UIActionSheet *photoSourceSheet = [[UIActionSheet alloc] initWithTitle:@"Select PhoneBooth Picture"
+                                                                      delegate:self
+                                                             cancelButtonTitle:nil
+                                                        destructiveButtonTitle:nil
+                                                             otherButtonTitles:@"Take New Photo",
+                                                                               @"Choose Existing Photo", nil];
+        // Show the action sheet near the add image button.
+        [photoSourceSheet showFromRect:((UIButton *)sender).frame inView:self.view animated:YES];
+    }
+    else { // No camera. Just use the library.
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+        
+        self.imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
+        self.imagePickerPopoverController.delegate = self;
+        [self.imagePickerPopoverController presentPopoverFromRect:((UIButton *)sender).frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
+    }
 }
 
 #pragma mark -
@@ -146,4 +156,35 @@
     self.imagePickerPopoverController = nil;
 }
 
+#pragma mark -
+#pragma mark UIActionSheetDelegate methods
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        NSLog(@"The user cancelled adding a image.");
+        return;
+    }
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+
+    switch (buttonIndex) {
+        case 0:
+            NSLog(@"User wants to take a new picture.");
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        default:
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+    }
+    
+    self.imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
+    self.imagePickerPopoverController.delegate = self;
+    [self.imagePickerPopoverController presentPopoverFromRect:self.takePictureButton.frame
+                                                       inView:self.view
+                                     permittedArrowDirections:UIPopoverArrowDirectionLeft
+                                                     animated:YES];
+}
 @end

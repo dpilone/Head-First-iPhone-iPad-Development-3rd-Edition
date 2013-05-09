@@ -127,6 +127,7 @@
                         <outlet property="imageView" destination="Ro3-x7-9dD" id="yQh-Zn-Oqw"/>
                         <outlet property="nameField" destination="8SU-3b-YZb" id="tuM-CA-AHS"/>
                         <outlet property="notesView" destination="HwE-ER-DLR" id="Q3z-C9-da3"/>
+                        <outlet property="takePictureButton" destination="06b-yr-rcW" id="sDS-Ex-Dif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
@@ -207,26 +208,6 @@
             <point key="canvasLocation" x="-366" y="248"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cityFieldEditingChanged:"/>
-                <relationship kind="action" name="nameFieldEditingChanged:"/>
-                <relationship kind="action" name="takePictureButtonPressed:"/>
-                <relationship kind="outlet" name="cityField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="notesView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
