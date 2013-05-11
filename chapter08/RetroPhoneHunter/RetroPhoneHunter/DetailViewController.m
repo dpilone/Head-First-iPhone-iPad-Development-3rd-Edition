@@ -187,7 +187,7 @@
     
     // Stop monitoring locations. In a real application, you would probably to keep updating
     // the location to get the most accurate position.
-    NSLog(@"Shutting down core location.")
+    NSLog(@"Shutting down core location.");
     [self.locationManager stopUpdatingLocation];
 }
 
