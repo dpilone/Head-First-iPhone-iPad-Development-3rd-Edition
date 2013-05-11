@@ -11,6 +11,7 @@
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) UIPopoverController *imagePickerPopoverController;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 - (void)configureView;
 @end
@@ -42,7 +43,26 @@
         self.cityField.text = self.detailItem.city;
         self.notesView.text = self.detailItem.notes;
         self.imageView.image = [UIImage imageWithContentsOfFile:self.detailItem.imagePath];
+        
+        if (self.detailItem.lat != nil && self.detailItem.lon != nil) {
+            self.locationLabel.text = [NSString stringWithFormat:@"%.3f, %.3f",
+                                       [self.detailItem.lat doubleValue],
+                                       [self.detailItem.lon doubleValue]];
+        } else {
+            self.locationLabel.text = @"No location.";
+        }
     }
+}
+
+- (CLLocationManager *)locationManager
+{
+    if (!_locationManager) {
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+        _locationManager.delegate = self;
+    }
+    
+    return _locationManager;
 }
 
 - (void)viewDidLoad
@@ -113,6 +133,11 @@
         self.imagePickerPopoverController.delegate = self;
         [self.imagePickerPopoverController presentPopoverFromRect:((UIButton *)sender).frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
     }
+}
+
+- (IBAction)locatePhoneboothButtonPressed:(id)sender
+{
+    [self.locationManager startUpdatingLocation];
 }
 
 #pragma mark -
@@ -187,4 +212,33 @@
                                      permittedArrowDirections:UIPopoverArrowDirectionLeft
                                                      animated:YES];
 }
+
+#pragma mark -
+#pragma mark CLLocationManagerDelegate methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"Core location claims to have a position.");
+    CLLocation *location = [locations lastObject];
+    
+    // Update the phonebooth and view.
+    self.detailItem.lat = [NSNumber numberWithDouble:location.coordinate.latitude];
+    self.detailItem.lon = [NSNumber numberWithDouble:location.coordinate.longitude];
+    
+    [self configureView];
+    
+    // Stop monitoring locations. In a real application, you would probably to keep updating
+    // the location to get the most accurate position.
+    NSLog(@"Shutting down core location.");
+    [self.locationManager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"Core location can't get a fix!");
+    
+    // Update the view to alert the user that we can't get a location.
+    self.locationLabel.text = @"Can't get a location.";
+}
+
 @end

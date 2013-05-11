@@ -27,11 +27,7 @@
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-x7-9dD">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="248" id="VT1-4m-lh6"/>
-                                </constraints>
-                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-x7-9dD"/>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jb2-Ni-uwr">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -42,7 +38,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwE-ER-DLR">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="Zlc-v9-OOH"/>
+                                    <constraint firstAttribute="height" constant="172" id="UN9-d4-Cup"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -57,9 +53,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-3b-YZb">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="269" id="wPH-hE-zNJ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -79,6 +72,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrb-wX-hew">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06b-yr-rcW">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Take Picture">
@@ -92,23 +90,51 @@
                                     <action selector="takePictureButtonPressed:" destination="4" eventType="touchUpInside" id="OMo-tR-Qwg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02U-o9-Ktv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="sdC-hz-kMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eic-M0-lBh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Locate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="locatePhoneboothButtonPressed:" destination="4" eventType="touchUpInside" id="Zcb-Bx-2BA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8SU-3b-YZb" firstAttribute="top" secondItem="26" secondAttribute="top" constant="20" symbolic="YES" type="default" id="1zQ-Ka-Y7o"/>
-                            <constraint firstItem="Ro3-x7-9dD" firstAttribute="trailing" secondItem="06b-yr-rcW" secondAttribute="trailing" type="default" id="4km-hc-An6"/>
+                            <constraint firstItem="eic-M0-lBh" firstAttribute="baseline" secondItem="06b-yr-rcW" secondAttribute="baseline" type="default" id="2yd-fj-FYI"/>
+                            <constraint firstItem="eic-M0-lBh" firstAttribute="top" secondItem="HwE-ER-DLR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3mf-Q8-ftU"/>
                             <constraint firstItem="HwE-ER-DLR" firstAttribute="leading" secondItem="lkZ-fq-lD3" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4mg-e9-cPi"/>
                             <constraint firstItem="HwE-ER-DLR" firstAttribute="top" secondItem="Jb2-Ni-uwr" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BJ4-Lw-4Fo"/>
+                            <constraint firstItem="lrb-wX-hew" firstAttribute="leading" secondItem="lkZ-fq-lD3" secondAttribute="leading" type="default" id="Ixl-Qb-yFh"/>
                             <constraint firstItem="Ro3-x7-9dD" firstAttribute="leading" secondItem="26" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KAO-sQ-Iyl"/>
+                            <constraint firstItem="lrb-wX-hew" firstAttribute="leading" secondItem="06b-yr-rcW" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LE6-Gz-DIE"/>
+                            <constraint firstItem="eic-M0-lBh" firstAttribute="centerY" secondItem="02U-o9-Ktv" secondAttribute="centerY" type="default" id="MOR-x3-hef"/>
                             <constraint firstItem="Jb2-Ni-uwr" firstAttribute="leading" secondItem="HwE-ER-DLR" secondAttribute="leading" type="default" id="PwS-BH-diy"/>
                             <constraint firstItem="XpP-w2-MDw" firstAttribute="leading" secondItem="Ro3-x7-9dD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="U8S-k0-euv"/>
                             <constraint firstItem="hZ1-5C-Y1Q" firstAttribute="leading" secondItem="Ro3-x7-9dD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UN9-28-mnx"/>
                             <constraint firstItem="XpP-w2-MDw" firstAttribute="top" secondItem="26" secondAttribute="top" constant="62" id="WoD-SZ-hfl"/>
                             <constraint firstItem="8SU-3b-YZb" firstAttribute="leading" secondItem="hZ1-5C-Y1Q" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="X5R-3Z-qgQ"/>
+                            <constraint firstItem="06b-yr-rcW" firstAttribute="top" secondItem="Ro3-x7-9dD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XKD-we-qqR"/>
+                            <constraint firstItem="02U-o9-Ktv" firstAttribute="leading" secondItem="HwE-ER-DLR" secondAttribute="leading" type="default" id="YsZ-41-8Jy"/>
                             <constraint firstAttribute="trailing" secondItem="8SU-3b-YZb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="beQ-3A-LKR"/>
+                            <constraint firstItem="lrb-wX-hew" firstAttribute="baseline" secondItem="02U-o9-Ktv" secondAttribute="baseline" type="default" id="bp1-Sk-Q7L"/>
                             <constraint firstItem="hZ1-5C-Y1Q" firstAttribute="top" secondItem="26" secondAttribute="top" constant="24" id="c6U-EF-4li"/>
                             <constraint firstItem="lkZ-fq-lD3" firstAttribute="top" secondItem="HwE-ER-DLR" secondAttribute="top" type="default" id="eFN-qs-qpK"/>
-                            <constraint firstItem="06b-yr-rcW" firstAttribute="bottom" secondItem="HwE-ER-DLR" secondAttribute="bottom" type="default" id="gVm-Xd-IHS"/>
+                            <constraint firstItem="eic-M0-lBh" firstAttribute="leading" secondItem="02U-o9-Ktv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eFY-Hw-Y2M"/>
                             <constraint firstAttribute="trailing" secondItem="Jb2-Ni-uwr" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hkp-MT-9W3"/>
                             <constraint firstItem="lkZ-fq-lD3" firstAttribute="leading" secondItem="Ro3-x7-9dD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="l1B-vu-KM2"/>
                             <constraint firstItem="06b-yr-rcW" firstAttribute="leading" secondItem="26" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="loC-FZ-Ty5"/>
@@ -117,6 +143,8 @@
                             <constraint firstItem="8SU-3b-YZb" firstAttribute="leading" secondItem="Jb2-Ni-uwr" secondAttribute="leading" type="default" id="tHA-tb-L92"/>
                             <constraint firstItem="Ro3-x7-9dD" firstAttribute="top" secondItem="26" secondAttribute="top" constant="20" symbolic="YES" type="default" id="vNy-aZ-uZm"/>
                             <constraint firstItem="Jb2-Ni-uwr" firstAttribute="top" secondItem="8SU-3b-YZb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xYO-dM-7B2"/>
+                            <constraint firstAttribute="trailing" secondItem="eic-M0-lBh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yoL-cY-crH"/>
+                            <constraint firstItem="02U-o9-Ktv" firstAttribute="leading" secondItem="lrb-wX-hew" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="zI1-aZ-Zyk"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -125,6 +153,7 @@
                     <connections>
                         <outlet property="cityField" destination="Jb2-Ni-uwr" id="L8s-OP-7Y3"/>
                         <outlet property="imageView" destination="Ro3-x7-9dD" id="yQh-Zn-Oqw"/>
+                        <outlet property="locationLabel" destination="02U-o9-Ktv" id="ada-ch-oj1"/>
                         <outlet property="nameField" destination="8SU-3b-YZb" id="tuM-CA-AHS"/>
                         <outlet property="notesView" destination="HwE-ER-DLR" id="Q3z-C9-da3"/>
                         <outlet property="takePictureButton" destination="06b-yr-rcW" id="sDS-Ex-Dif"/>

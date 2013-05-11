@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 #import "PhoneBooth.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextViewDelegate,
                                                     UINavigationControllerDelegate, UIImagePickerControllerDelegate,
-                                                    UIPopoverControllerDelegate, UIActionSheetDelegate>
+                                                    UIPopoverControllerDelegate, UIActionSheetDelegate,
+                                                    CLLocationManagerDelegate>
 
 @property (strong, nonatomic) PhoneBooth * detailItem;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *cityField;
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
@@ -23,5 +26,6 @@
 - (IBAction)nameFieldEditingChanged:(id)sender;
 - (IBAction)cityFieldEditingChanged:(id)sender;
 - (IBAction)takePictureButtonPressed:(id)sender;
+- (IBAction)locatePhoneboothButtonPressed:(id)sender;
 
 @end
