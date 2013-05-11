@@ -48,6 +48,16 @@
             self.locationLabel.text = [NSString stringWithFormat:@"%.3f, %.3f",
                                        [self.detailItem.lat doubleValue],
                                        [self.detailItem.lon doubleValue]];
+
+            // Add the annotation to the map and zoom to it.
+            [self.mapView addAnnotation:self.detailItem];
+            MKCoordinateRegion region;
+            region.center.latitude = [self.detailItem.lat doubleValue];
+            region.center.longitude = [self.detailItem.lon doubleValue];
+            region.span.latitudeDelta = 0.5;
+            region.span.longitudeDelta = 0.5;
+            
+            [self.mapView setRegion:region animated:YES];
         } else {
             self.locationLabel.text = @"No location.";
         }

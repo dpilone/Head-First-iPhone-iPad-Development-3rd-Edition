@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 #import "PhoneBooth.h"
 
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *cityField;
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 - (IBAction)nameFieldEditingChanged:(id)sender;
 - (IBAction)cityFieldEditingChanged:(id)sender;
 - (IBAction)takePictureButtonPressed:(id)sender;
