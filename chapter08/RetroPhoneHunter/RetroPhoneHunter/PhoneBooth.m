@@ -18,4 +18,22 @@
 @dynamic lat;
 @dynamic lon;
 
+@dynamic coordinate;
+
+- (CLLocationCoordinate2D)coordinate
+{
+    return CLLocationCoordinate2DMake([self.lat doubleValue],
+                                      [self.lon doubleValue]);
+}
+
+- (NSString *)title
+{
+    return self.name;
+}
+
+- (NSString *)subtitle
+{
+    return self.notes;
+}
+
 @end
