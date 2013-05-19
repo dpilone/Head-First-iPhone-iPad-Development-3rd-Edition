@@ -27,9 +27,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="FC1-2A-Eb9">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="12" id="qyc-jB-i6t"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
@@ -72,10 +80,20 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchDisplayController" destination="FgZ-G3-5cz" id="mrn-HA-tnB"/>
                         <outlet property="segmentedControl" destination="u4a-8w-Ndr" id="ZYg-5I-F9W"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FgZ-G3-5cz">
+                    <connections>
+                        <outlet property="delegate" destination="12" id="N0s-Rn-Bwz"/>
+                        <outlet property="searchBar" destination="FC1-2A-Eb9" id="BlI-pT-NQd"/>
+                        <outlet property="searchContentsController" destination="12" id="WNa-Qd-M4B"/>
+                        <outlet property="searchResultsDataSource" destination="12" id="UIW-v1-C4t"/>
+                        <outlet property="searchResultsDelegate" destination="12" id="X3e-LA-rJm"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="460" y="64"/>
         </scene>
@@ -294,6 +312,30 @@
             <point key="canvasLocation" x="903" y="64"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="newEpisodeValueChanged:"/>
+                <relationship kind="action" name="textFieldEditingChanged:"/>
+                <relationship kind="outlet" name="descriptionView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="episodeIDField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="firstRunSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="showTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="segmentedControlValueChanged:"/>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
