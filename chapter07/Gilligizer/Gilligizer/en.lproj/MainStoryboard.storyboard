@@ -57,11 +57,27 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                    <navigationItem key="navigationItem" id="36">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="u4a-8w-Ndr">
+                            <rect key="frame" x="62" y="6" width="196" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Show Time"/>
+                                <segment title="Title"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlValueChanged:" destination="12" eventType="valueChanged" id="P4Y-hH-5DW"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="u4a-8w-Ndr" id="ZYg-5I-F9W"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="64"/>
+            <point key="canvasLocation" x="460" y="64"/>
         </scene>
         <!--Detail View Controller - Details-->
         <scene sceneID="niy-IW-6zW">
@@ -278,26 +294,6 @@
             <point key="canvasLocation" x="903" y="64"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="newEpisodeValueChanged:"/>
-                <relationship kind="action" name="textFieldEditingChanged:"/>
-                <relationship kind="outlet" name="descriptionView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="episodeIDField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="firstRunSegmentedControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="showTimeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

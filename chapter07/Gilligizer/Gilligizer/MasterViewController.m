@@ -61,6 +61,16 @@
     }
 }
 
+#pragma mark -
+#pragma mark Actions
+
+- (IBAction)segmentedControlValueChanged:(id)sender
+{
+    self.fetchedResultsController = nil;
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -135,7 +145,8 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"showTime" ascending:YES];
+    NSString *sortKey = [self.segmentedControl selectedSegmentIndex] == 0 ? @"showTime" : @"title";
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:sortKey ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
