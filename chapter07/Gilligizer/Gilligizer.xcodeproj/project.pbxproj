@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA776BCD1725CFDB00F9B4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCC1725CFDB00F9B4BC /* UIKit.framework */; };
+		DA776BCF1725CFDB00F9B4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCE1725CFDB00F9B4BC /* Foundation.framework */; };
+		DA776BD11725CFDB00F9B4BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD01725CFDB00F9B4BC /* CoreGraphics.framework */; };
+		DA776BD31725CFDB00F9B4BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD21725CFDB00F9B4BC /* CoreData.framework */; };
+		DA776BD91725CFDB00F9B4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA776BD71725CFDB00F9B4BC /* InfoPlist.strings */; };
+		DA776BDB1725CFDB00F9B4BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BDA1725CFDB00F9B4BC /* main.m */; };
+		DA776BDF1725CFDB00F9B4BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */; };
+		DA776BE11725CFDB00F9B4BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE01725CFDB00F9B4BC /* Default.png */; };
+		DA776BE31725CFDB00F9B4BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE21725CFDB00F9B4BC /* Default@2x.png */; };
+		DA776BE51725CFDB00F9B4BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */; };
+		DA776BE81725CFDB00F9B4BC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */; };
+		DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */; };
+		DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BED1725CFDB00F9B4BC /* MasterViewController.m */; };
+		DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BF01725CFDB00F9B4BC /* DetailViewController.m */; };
+		DA776BF91725CFDC00F9B4BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */; };
+		DA776BFA1725CFDC00F9B4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCC1725CFDB00F9B4BC /* UIKit.framework */; };
+		DA776BFB1725CFDC00F9B4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCE1725CFDB00F9B4BC /* Foundation.framework */; };
+		DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD21725CFDB00F9B4BC /* CoreData.framework */; };
+		DA776C041725CFDC00F9B4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA776C021725CFDC00F9B4BC /* InfoPlist.strings */; };
+		DA776C071725CFDC00F9B4BC /* GilligizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C061725CFDC00F9B4BC /* GilligizerTests.m */; };
+		DA776C1217264B9B00F9B4BC /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C1117264B9B00F9B4BC /* Show.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA776BFD1725CFDC00F9B4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA776BC11725CFDB00F9B4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA776BC81725CFDB00F9B4BC;
+			remoteInfo = Gilligizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA776BC91725CFDB00F9B4BC /* Gilligizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gilligizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA776BCC1725CFDB00F9B4BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA776BCE1725CFDB00F9B4BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA776BD01725CFDB00F9B4BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA776BD21725CFDB00F9B4BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA776BD61725CFDB00F9B4BC /* Gilligizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gilligizer-Info.plist"; sourceTree = "<group>"; };
+		DA776BD81725CFDB00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA776BDA1725CFDB00F9B4BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA776BDC1725CFDB00F9B4BC /* Gilligizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gilligizer-Prefix.pch"; sourceTree = "<group>"; };
+		DA776BDD1725CFDB00F9B4BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA776BE01725CFDB00F9B4BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DA776BE21725CFDB00F9B4BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA776BE71725CFDB00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA776BEA1725CFDB00F9B4BC /* Gilligizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gilligizer.xcdatamodel; sourceTree = "<group>"; };
+		DA776BEC1725CFDB00F9B4BC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		DA776BED1725CFDB00F9B4BC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		DA776BEF1725CFDB00F9B4BC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DA776BF01725CFDB00F9B4BC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GilligizerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA776C011725CFDC00F9B4BC /* GilligizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GilligizerTests-Info.plist"; sourceTree = "<group>"; };
+		DA776C031725CFDC00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA776C051725CFDC00F9B4BC /* GilligizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GilligizerTests.h; sourceTree = "<group>"; };
+		DA776C061725CFDC00F9B4BC /* GilligizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GilligizerTests.m; sourceTree = "<group>"; };
+		DA776C1017264B9B00F9B4BC /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		DA776C1117264B9B00F9B4BC /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA776BC61725CFDB00F9B4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776BCD1725CFDB00F9B4BC /* UIKit.framework in Frameworks */,
+				DA776BCF1725CFDB00F9B4BC /* Foundation.framework in Frameworks */,
+				DA776BD11725CFDB00F9B4BC /* CoreGraphics.framework in Frameworks */,
+				DA776BD31725CFDB00F9B4BC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA776BF31725CFDC00F9B4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776BF91725CFDC00F9B4BC /* SenTestingKit.framework in Frameworks */,
+				DA776BFA1725CFDC00F9B4BC /* UIKit.framework in Frameworks */,
+				DA776BFB1725CFDC00F9B4BC /* Foundation.framework in Frameworks */,
+				DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA776BC01725CFDB00F9B4BC = {
+			isa = PBXGroup;
+			children = (
+				DA776BD41725CFDB00F9B4BC /* Gilligizer */,
+				DA776BFF1725CFDC00F9B4BC /* GilligizerTests */,
+				DA776BCB1725CFDB00F9B4BC /* Frameworks */,
+				DA776BCA1725CFDB00F9B4BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA776BCA1725CFDB00F9B4BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA776BC91725CFDB00F9B4BC /* Gilligizer.app */,
+				DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA776BCB1725CFDB00F9B4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA776BCC1725CFDB00F9B4BC /* UIKit.framework */,
+				DA776BCE1725CFDB00F9B4BC /* Foundation.framework */,
+				DA776BD01725CFDB00F9B4BC /* CoreGraphics.framework */,
+				DA776BD21725CFDB00F9B4BC /* CoreData.framework */,
+				DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA776BD41725CFDB00F9B4BC /* Gilligizer */ = {
+			isa = PBXGroup;
+			children = (
+				DA776BDD1725CFDB00F9B4BC /* AppDelegate.h */,
+				DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */,
+				DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */,
+				DA776BEC1725CFDB00F9B4BC /* MasterViewController.h */,
+				DA776BED1725CFDB00F9B4BC /* MasterViewController.m */,
+				DA776BEF1725CFDB00F9B4BC /* DetailViewController.h */,
+				DA776BF01725CFDB00F9B4BC /* DetailViewController.m */,
+				DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */,
+				DA776C1017264B9B00F9B4BC /* Show.h */,
+				DA776C1117264B9B00F9B4BC /* Show.m */,
+				DA776BD51725CFDB00F9B4BC /* Supporting Files */,
+			);
+			path = Gilligizer;
+			sourceTree = "<group>";
+		};
+		DA776BD51725CFDB00F9B4BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA776BD61725CFDB00F9B4BC /* Gilligizer-Info.plist */,
+				DA776BD71725CFDB00F9B4BC /* InfoPlist.strings */,
+				DA776BDA1725CFDB00F9B4BC /* main.m */,
+				DA776BDC1725CFDB00F9B4BC /* Gilligizer-Prefix.pch */,
+				DA776BE01725CFDB00F9B4BC /* Default.png */,
+				DA776BE21725CFDB00F9B4BC /* Default@2x.png */,
+				DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA776BFF1725CFDC00F9B4BC /* GilligizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA776C051725CFDC00F9B4BC /* GilligizerTests.h */,
+				DA776C061725CFDC00F9B4BC /* GilligizerTests.m */,
+				DA776C001725CFDC00F9B4BC /* Supporting Files */,
+			);
+			path = GilligizerTests;
+			sourceTree = "<group>";
+		};
+		DA776C001725CFDC00F9B4BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA776C011725CFDC00F9B4BC /* GilligizerTests-Info.plist */,
+				DA776C021725CFDC00F9B4BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA776BC81725CFDB00F9B4BC /* Gilligizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA776C0A1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "Gilligizer" */;
+			buildPhases = (
+				DA776BC51725CFDB00F9B4BC /* Sources */,
+				DA776BC61725CFDB00F9B4BC /* Frameworks */,
+				DA776BC71725CFDB00F9B4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gilligizer;
+			productName = Gilligizer;
+			productReference = DA776BC91725CFDB00F9B4BC /* Gilligizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA776BF61725CFDC00F9B4BC /* GilligizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA776C0D1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "GilligizerTests" */;
+			buildPhases = (
+				DA776BF21725CFDC00F9B4BC /* Sources */,
+				DA776BF31725CFDC00F9B4BC /* Frameworks */,
+				DA776BF41725CFDC00F9B4BC /* Resources */,
+				DA776BF51725CFDC00F9B4BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA776BFE1725CFDC00F9B4BC /* PBXTargetDependency */,
+			);
+			name = GilligizerTests;
+			productName = GilligizerTests;
+			productReference = DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA776BC11725CFDB00F9B4BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Element 84, LLC";
+			};
+			buildConfigurationList = DA776BC41725CFDB00F9B4BC /* Build configuration list for PBXProject "Gilligizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA776BC01725CFDB00F9B4BC;
+			productRefGroup = DA776BCA1725CFDB00F9B4BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA776BC81725CFDB00F9B4BC /* Gilligizer */,
+				DA776BF61725CFDC00F9B4BC /* GilligizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA776BC71725CFDB00F9B4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776BD91725CFDB00F9B4BC /* InfoPlist.strings in Resources */,
+				DA776BE11725CFDB00F9B4BC /* Default.png in Resources */,
+				DA776BE31725CFDB00F9B4BC /* Default@2x.png in Resources */,
+				DA776BE51725CFDB00F9B4BC /* Default-568h@2x.png in Resources */,
+				DA776BE81725CFDB00F9B4BC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA776BF41725CFDC00F9B4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776C041725CFDC00F9B4BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA776BF51725CFDC00F9B4BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA776BC51725CFDB00F9B4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776BDB1725CFDB00F9B4BC /* main.m in Sources */,
+				DA776BDF1725CFDB00F9B4BC /* AppDelegate.m in Sources */,
+				DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */,
+				DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */,
+				DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */,
+				DA776C1217264B9B00F9B4BC /* Show.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA776BF21725CFDC00F9B4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA776C071725CFDC00F9B4BC /* GilligizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA776BFE1725CFDC00F9B4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA776BC81725CFDB00F9B4BC /* Gilligizer */;
+			targetProxy = DA776BFD1725CFDC00F9B4BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA776BD71725CFDB00F9B4BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA776BD81725CFDB00F9B4BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA776BE71725CFDB00F9B4BC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		DA776C021725CFDC00F9B4BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA776C031725CFDC00F9B4BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA776C081725CFDC00F9B4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA776C091725CFDC00F9B4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA776C0B1725CFDC00F9B4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
+				INFOPLIST_FILE = "Gilligizer/Gilligizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA776C0C1725CFDC00F9B4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
+				INFOPLIST_FILE = "Gilligizer/Gilligizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA776C0E1725CFDC00F9B4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gilligizer.app/Gilligizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
+				INFOPLIST_FILE = "GilligizerTests/GilligizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DA776C0F1725CFDC00F9B4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gilligizer.app/Gilligizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
+				INFOPLIST_FILE = "GilligizerTests/GilligizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA776BC41725CFDB00F9B4BC /* Build configuration list for PBXProject "Gilligizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA776C081725CFDC00F9B4BC /* Debug */,
+				DA776C091725CFDC00F9B4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA776C0A1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "Gilligizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA776C0B1725CFDC00F9B4BC /* Debug */,
+				DA776C0C1725CFDC00F9B4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA776C0D1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "GilligizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA776C0E1725CFDC00F9B4BC /* Debug */,
+				DA776C0F1725CFDC00F9B4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA776BEA1725CFDB00F9B4BC /* Gilligizer.xcdatamodel */,
+			);
+			currentVersion = DA776BEA1725CFDB00F9B4BC /* Gilligizer.xcdatamodel */;
+			path = Gilligizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA776BC11725CFDB00F9B4BC /* Project object */;
+}
