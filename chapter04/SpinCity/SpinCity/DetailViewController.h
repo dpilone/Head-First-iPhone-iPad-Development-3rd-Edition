@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Album;
 
-@interface DetailViewController : UITableViewController
+@interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) Album *detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *albumTitleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *artistLabel;
-@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+@property (strong, nonatomic) id detailItem;
 
+@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

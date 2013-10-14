@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC2DBCB5169BC75C00DD0411 /* Albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2DBCB4169BC75C00DD0411 /* Albums.plist */; };
 		BCC5830316504B6800086810 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830216504B6800086810 /* UIKit.framework */; };
 		BCC5830516504B6800086810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830416504B6800086810 /* Foundation.framework */; };
 		BCC5830716504B6800086810 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC5830616504B6800086810 /* CoreGraphics.framework */; };
 		BCC5830D16504B6800086810 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCC5830B16504B6800086810 /* InfoPlist.strings */; };
 		BCC5830F16504B6800086810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5830E16504B6800086810 /* main.m */; };
 		BCC5831316504B6800086810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5831216504B6800086810 /* AppDelegate.m */; };
-		BCC5831516504B6800086810 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831416504B6800086810 /* Default.png */; };
-		BCC5831716504B6800086810 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831616504B6800086810 /* Default@2x.png */; };
-		BCC5831916504B6800086810 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831816504B6800086810 /* Default-568h@2x.png */; };
 		BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831A16504B6800086810 /* MainStoryboard.storyboard */; };
 		BCC5831F16504B6800086810 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5831E16504B6800086810 /* MasterViewController.m */; };
 		BCC5832216504B6800086810 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832116504B6800086810 /* DetailViewController.m */; };
 		BCC5832E1656969F00086810 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832D1656969F00086810 /* Album.m */; };
 		BCC5833116569A2800086810 /* AlbumDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5833016569A2800086810 /* AlbumDataController.m */; };
 		BCC583401656E1D200086810 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5833F1656E1D200086810 /* AlbumTableViewCell.m */; };
+		DAC56DDD180C9B7E00979110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC56DDC180C9B7E00979110 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC2DBCB4169BC75C00DD0411 /* Albums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Albums.plist; sourceTree = "<group>"; };
 		BCC582FE16504B6800086810 /* SpinCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC5830216504B6800086810 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCC5830416504B6800086810 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,9 +33,6 @@
 		BCC5831016504B6800086810 /* SpinCity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpinCity-Prefix.pch"; sourceTree = "<group>"; };
 		BCC5831116504B6800086810 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCC5831216504B6800086810 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BCC5831416504B6800086810 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BCC5831616504B6800086810 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BCC5831816504B6800086810 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BCC5831B16504B6800086810 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BCC5831D16504B6800086810 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		BCC5831E16504B6800086810 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
@@ -51,6 +44,7 @@
 		BCC5833016569A2800086810 /* AlbumDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataController.m; sourceTree = "<group>"; };
 		BCC5833E1656E1D200086810 /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
 		BCC5833F1656E1D200086810 /* AlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
+		DAC56DDC180C9B7E00979110 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +93,6 @@
 			children = (
 				BCC5832F16569A2800086810 /* AlbumDataController.h */,
 				BCC5833016569A2800086810 /* AlbumDataController.m */,
-				BC2DBCB4169BC75C00DD0411 /* Albums.plist */,
 				BCC5833E1656E1D200086810 /* AlbumTableViewCell.h */,
 				BCC5833F1656E1D200086810 /* AlbumTableViewCell.m */,
 				BCC5832C1656969F00086810 /* Album.h */,
@@ -111,6 +104,7 @@
 				BCC5831E16504B6800086810 /* MasterViewController.m */,
 				BCC5832016504B6800086810 /* DetailViewController.h */,
 				BCC5832116504B6800086810 /* DetailViewController.m */,
+				DAC56DDC180C9B7E00979110 /* Images.xcassets */,
 				BCC5830916504B6800086810 /* Supporting Files */,
 			);
 			path = SpinCity;
@@ -123,9 +117,6 @@
 				BCC5830B16504B6800086810 /* InfoPlist.strings */,
 				BCC5830E16504B6800086810 /* main.m */,
 				BCC5831016504B6800086810 /* SpinCity-Prefix.pch */,
-				BCC5831416504B6800086810 /* Default.png */,
-				BCC5831616504B6800086810 /* Default@2x.png */,
-				BCC5831816504B6800086810 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,11 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCC5830D16504B6800086810 /* InfoPlist.strings in Resources */,
-				BCC5831516504B6800086810 /* Default.png in Resources */,
-				BCC5831716504B6800086810 /* Default@2x.png in Resources */,
-				BCC5831916504B6800086810 /* Default-568h@2x.png in Resources */,
+				DAC56DDD180C9B7E00979110 /* Images.xcassets in Resources */,
 				BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */,
-				BC2DBCB5169BC75C00DD0411 /* Albums.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,9 +269,12 @@
 		BCC5832616504B6800086810 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpinCity/SpinCity-Prefix.pch";
 				INFOPLIST_FILE = "SpinCity/SpinCity-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,9 +283,12 @@
 		BCC5832716504B6800086810 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpinCity/SpinCity-Prefix.pch";
 				INFOPLIST_FILE = "SpinCity/SpinCity-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
