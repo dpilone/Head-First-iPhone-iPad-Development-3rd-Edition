@@ -13,9 +13,6 @@
 		DA87D02C170F6534007D4CE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87D02A170F6534007D4CE9 /* InfoPlist.strings */; };
 		DA87D02E170F6534007D4CE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D02D170F6534007D4CE9 /* main.m */; };
 		DA87D032170F6534007D4CE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D031170F6534007D4CE9 /* AppDelegate.m */; };
-		DA87D034170F6534007D4CE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D033170F6534007D4CE9 /* Default.png */; };
-		DA87D036170F6534007D4CE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D035170F6534007D4CE9 /* Default@2x.png */; };
-		DA87D038170F6534007D4CE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D037170F6534007D4CE9 /* Default-568h@2x.png */; };
 		DA87D03B170F6534007D4CE9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87D039170F6534007D4CE9 /* MainStoryboard.storyboard */; };
 		DA87D03E170F6534007D4CE9 /* InstaTwitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */; };
 		DA87D046170F6534007D4CE9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D045170F6534007D4CE9 /* SenTestingKit.framework */; };
@@ -24,10 +21,7 @@
 		DA87D050170F6534007D4CE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87D04E170F6534007D4CE9 /* InfoPlist.strings */; };
 		DA87D053170F6534007D4CE9 /* InstaTwitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D052170F6534007D4CE9 /* InstaTwitTests.m */; };
 		DA87D05D170F685F007D4CE9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D05C170F685F007D4CE9 /* Social.framework */; };
-		DA87D09B1714DD0F007D4CE9 /* old-icon-bird-square-57.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D0991714DD0F007D4CE9 /* old-icon-bird-square-57.png */; };
-		DA87D09C1714DD0F007D4CE9 /* old-icon-bird-square-114.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D09A1714DD0F007D4CE9 /* old-icon-bird-square-114.png */; };
-		DA87D09E1714DE28007D4CE9 /* square-new-icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D09D1714DE28007D4CE9 /* square-new-icon-57.png */; };
-		DA87D0A01714DE2F007D4CE9 /* square-new-icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = DA87D09F1714DE2F007D4CE9 /* square-new-icon-114.png */; };
+		DAC56DD9180C8EF800979110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC56DD8180C8EF800979110 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +45,6 @@
 		DA87D02F170F6534007D4CE9 /* InstaTwit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaTwit-Prefix.pch"; sourceTree = "<group>"; };
 		DA87D030170F6534007D4CE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA87D031170F6534007D4CE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA87D033170F6534007D4CE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DA87D035170F6534007D4CE9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DA87D037170F6534007D4CE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DA87D03A170F6534007D4CE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DA87D03C170F6534007D4CE9 /* InstaTwitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaTwitViewController.h; sourceTree = "<group>"; };
 		DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaTwitViewController.m; sourceTree = "<group>"; };
@@ -64,10 +55,7 @@
 		DA87D051170F6534007D4CE9 /* InstaTwitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaTwitTests.h; sourceTree = "<group>"; };
 		DA87D052170F6534007D4CE9 /* InstaTwitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaTwitTests.m; sourceTree = "<group>"; };
 		DA87D05C170F685F007D4CE9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		DA87D0991714DD0F007D4CE9 /* old-icon-bird-square-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "old-icon-bird-square-57.png"; path = "Resources/old-icon-bird-square-57.png"; sourceTree = SOURCE_ROOT; };
-		DA87D09A1714DD0F007D4CE9 /* old-icon-bird-square-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "old-icon-bird-square-114.png"; path = "Resources/old-icon-bird-square-114.png"; sourceTree = SOURCE_ROOT; };
-		DA87D09D1714DE28007D4CE9 /* square-new-icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square-new-icon-57.png"; path = "../square-new-icon-57.png"; sourceTree = "<group>"; };
-		DA87D09F1714DE2F007D4CE9 /* square-new-icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square-new-icon-114.png"; path = "../square-new-icon-114.png"; sourceTree = "<group>"; };
+		DAC56DD8180C8EF800979110 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +122,7 @@
 				DA87D039170F6534007D4CE9 /* MainStoryboard.storyboard */,
 				DA87D03C170F6534007D4CE9 /* InstaTwitViewController.h */,
 				DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */,
+				DAC56DD8180C8EF800979110 /* Images.xcassets */,
 				DA87D028170F6534007D4CE9 /* Supporting Files */,
 			);
 			path = InstaTwit;
@@ -146,13 +135,6 @@
 				DA87D02A170F6534007D4CE9 /* InfoPlist.strings */,
 				DA87D02D170F6534007D4CE9 /* main.m */,
 				DA87D02F170F6534007D4CE9 /* InstaTwit-Prefix.pch */,
-				DA87D09F1714DE2F007D4CE9 /* square-new-icon-114.png */,
-				DA87D09D1714DE28007D4CE9 /* square-new-icon-57.png */,
-				DA87D0991714DD0F007D4CE9 /* old-icon-bird-square-57.png */,
-				DA87D09A1714DD0F007D4CE9 /* old-icon-bird-square-114.png */,
-				DA87D033170F6534007D4CE9 /* Default.png */,
-				DA87D035170F6534007D4CE9 /* Default@2x.png */,
-				DA87D037170F6534007D4CE9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,14 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA87D02C170F6534007D4CE9 /* InfoPlist.strings in Resources */,
-				DA87D034170F6534007D4CE9 /* Default.png in Resources */,
-				DA87D036170F6534007D4CE9 /* Default@2x.png in Resources */,
-				DA87D038170F6534007D4CE9 /* Default-568h@2x.png in Resources */,
+				DAC56DD9180C8EF800979110 /* Images.xcassets in Resources */,
 				DA87D03B170F6534007D4CE9 /* MainStoryboard.storyboard in Resources */,
-				DA87D09B1714DD0F007D4CE9 /* old-icon-bird-square-57.png in Resources */,
-				DA87D09C1714DD0F007D4CE9 /* old-icon-bird-square-114.png in Resources */,
-				DA87D09E1714DE28007D4CE9 /* square-new-icon-57.png in Resources */,
-				DA87D0A01714DE2F007D4CE9 /* square-new-icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,9 +377,12 @@
 		DA87D057170F6534007D4CE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,9 +391,12 @@
 		DA87D058170F6534007D4CE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
