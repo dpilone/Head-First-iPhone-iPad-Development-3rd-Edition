@@ -13,9 +13,6 @@
 		BC2AB9CD162501D8000A9076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9CB162501D8000A9076 /* InfoPlist.strings */; };
 		BC2AB9CF162501D8000A9076 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9CE162501D8000A9076 /* main.m */; };
 		BC2AB9D3162501D8000A9076 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9D2162501D8000A9076 /* AppDelegate.m */; };
-		BC2AB9D5162501D8000A9076 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9D4162501D8000A9076 /* Default.png */; };
-		BC2AB9D7162501D8000A9076 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9D6162501D8000A9076 /* Default@2x.png */; };
-		BC2AB9D9162501D8000A9076 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9D8162501D8000A9076 /* Default-568h@2x.png */; };
 		BC2AB9DC162501D8000A9076 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9DA162501D8000A9076 /* MainStoryboard.storyboard */; };
 		BC2AB9DF162501D8000A9076 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9DE162501D8000A9076 /* ViewController.m */; };
 		BC2AB9E7162501D8000A9076 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2AB9E6162501D8000A9076 /* SenTestingKit.framework */; };
@@ -24,6 +21,7 @@
 		BC2AB9F1162501D8000A9076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9EF162501D8000A9076 /* InfoPlist.strings */; };
 		BC2AB9F4162501D8000A9076 /* MarcoPolloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9F3162501D8000A9076 /* MarcoPolloTests.m */; };
 		BC2ABA16162511C0000A9076 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2ABA15162511C0000A9076 /* Social.framework */; };
+		DAC56DE3180CA79700979110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC56DE2180CA79700979110 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +45,6 @@
 		BC2AB9D0162501D8000A9076 /* MarcoPollo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarcoPollo-Prefix.pch"; sourceTree = "<group>"; };
 		BC2AB9D1162501D8000A9076 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC2AB9D2162501D8000A9076 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC2AB9D4162501D8000A9076 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BC2AB9D6162501D8000A9076 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BC2AB9D8162501D8000A9076 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC2AB9DB162501D8000A9076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BC2AB9DD162501D8000A9076 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BC2AB9DE162501D8000A9076 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -60,6 +55,7 @@
 		BC2AB9F2162501D8000A9076 /* MarcoPolloTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarcoPolloTests.h; sourceTree = "<group>"; };
 		BC2AB9F3162501D8000A9076 /* MarcoPolloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarcoPolloTests.m; sourceTree = "<group>"; };
 		BC2ABA15162511C0000A9076 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DAC56DE2180CA79700979110 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +122,7 @@
 				BC2AB9DA162501D8000A9076 /* MainStoryboard.storyboard */,
 				BC2AB9DD162501D8000A9076 /* ViewController.h */,
 				BC2AB9DE162501D8000A9076 /* ViewController.m */,
+				DAC56DE2180CA79700979110 /* Images.xcassets */,
 				BC2AB9C9162501D8000A9076 /* Supporting Files */,
 			);
 			path = MarcoPollo;
@@ -138,9 +135,6 @@
 				BC2AB9CB162501D8000A9076 /* InfoPlist.strings */,
 				BC2AB9CE162501D8000A9076 /* main.m */,
 				BC2AB9D0162501D8000A9076 /* MarcoPollo-Prefix.pch */,
-				BC2AB9D4162501D8000A9076 /* Default.png */,
-				BC2AB9D6162501D8000A9076 /* Default@2x.png */,
-				BC2AB9D8162501D8000A9076 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,9 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2AB9CD162501D8000A9076 /* InfoPlist.strings in Resources */,
-				BC2AB9D5162501D8000A9076 /* Default.png in Resources */,
-				BC2AB9D7162501D8000A9076 /* Default@2x.png in Resources */,
-				BC2AB9D9162501D8000A9076 /* Default-568h@2x.png in Resources */,
+				DAC56DE3180CA79700979110 /* Images.xcassets in Resources */,
 				BC2AB9DC162501D8000A9076 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,9 +370,12 @@
 		BC2AB9F8162501D8000A9076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarcoPollo/MarcoPollo-Prefix.pch";
 				INFOPLIST_FILE = "MarcoPollo/MarcoPollo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +384,12 @@
 		BC2AB9F9162501D8000A9076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarcoPollo/MarcoPollo-Prefix.pch";
 				INFOPLIST_FILE = "MarcoPollo/MarcoPollo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
