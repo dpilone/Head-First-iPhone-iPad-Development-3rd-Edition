@@ -29,11 +29,11 @@
                         <viewControllerLayoutGuide type="bottom" id="aA8-Js-Qf2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="26">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="27">
-                                <rect key="frame" x="20" y="376" width="663" height="17"/>
+                                <rect key="frame" x="20" y="344" width="663" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,6 +48,7 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="53"/>
                     <connections>
