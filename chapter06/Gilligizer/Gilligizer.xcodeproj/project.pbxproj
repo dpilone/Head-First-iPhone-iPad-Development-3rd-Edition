@@ -14,10 +14,7 @@
 		DA776BD91725CFDB00F9B4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA776BD71725CFDB00F9B4BC /* InfoPlist.strings */; };
 		DA776BDB1725CFDB00F9B4BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BDA1725CFDB00F9B4BC /* main.m */; };
 		DA776BDF1725CFDB00F9B4BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */; };
-		DA776BE11725CFDB00F9B4BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE01725CFDB00F9B4BC /* Default.png */; };
-		DA776BE31725CFDB00F9B4BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE21725CFDB00F9B4BC /* Default@2x.png */; };
-		DA776BE51725CFDB00F9B4BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */; };
-		DA776BE81725CFDB00F9B4BC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */; };
+		DA776BE81725CFDB00F9B4BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA776BE61725CFDB00F9B4BC /* Main.storyboard */; };
 		DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */; };
 		DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BED1725CFDB00F9B4BC /* MasterViewController.m */; };
 		DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BF01725CFDB00F9B4BC /* DetailViewController.m */; };
@@ -27,7 +24,7 @@
 		DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD21725CFDB00F9B4BC /* CoreData.framework */; };
 		DA776C041725CFDC00F9B4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA776C021725CFDC00F9B4BC /* InfoPlist.strings */; };
 		DA776C071725CFDC00F9B4BC /* GilligizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C061725CFDC00F9B4BC /* GilligizerTests.m */; };
-		DA776C1217264B9B00F9B4BC /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776C1117264B9B00F9B4BC /* Show.m */; };
+		DAD94540180ED7BA0053499D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD9453F180ED7BA0053499D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +49,7 @@
 		DA776BDC1725CFDB00F9B4BC /* Gilligizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gilligizer-Prefix.pch"; sourceTree = "<group>"; };
 		DA776BDD1725CFDB00F9B4BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA776BE01725CFDB00F9B4BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DA776BE21725CFDB00F9B4BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DA776BE71725CFDB00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA776BE71725CFDB00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA776BEA1725CFDB00F9B4BC /* Gilligizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gilligizer.xcdatamodel; sourceTree = "<group>"; };
 		DA776BEC1725CFDB00F9B4BC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		DA776BED1725CFDB00F9B4BC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
@@ -67,8 +61,7 @@
 		DA776C031725CFDC00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA776C051725CFDC00F9B4BC /* GilligizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GilligizerTests.h; sourceTree = "<group>"; };
 		DA776C061725CFDC00F9B4BC /* GilligizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GilligizerTests.m; sourceTree = "<group>"; };
-		DA776C1017264B9B00F9B4BC /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
-		DA776C1117264B9B00F9B4BC /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+		DAD9453F180ED7BA0053499D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,14 +126,13 @@
 			children = (
 				DA776BDD1725CFDB00F9B4BC /* AppDelegate.h */,
 				DA776BDE1725CFDB00F9B4BC /* AppDelegate.m */,
-				DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */,
+				DA776BE61725CFDB00F9B4BC /* Main.storyboard */,
 				DA776BEC1725CFDB00F9B4BC /* MasterViewController.h */,
 				DA776BED1725CFDB00F9B4BC /* MasterViewController.m */,
 				DA776BEF1725CFDB00F9B4BC /* DetailViewController.h */,
 				DA776BF01725CFDB00F9B4BC /* DetailViewController.m */,
 				DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */,
-				DA776C1017264B9B00F9B4BC /* Show.h */,
-				DA776C1117264B9B00F9B4BC /* Show.m */,
+				DAD9453F180ED7BA0053499D /* Images.xcassets */,
 				DA776BD51725CFDB00F9B4BC /* Supporting Files */,
 			);
 			path = Gilligizer;
@@ -153,9 +145,6 @@
 				DA776BD71725CFDB00F9B4BC /* InfoPlist.strings */,
 				DA776BDA1725CFDB00F9B4BC /* main.m */,
 				DA776BDC1725CFDB00F9B4BC /* Gilligizer-Prefix.pch */,
-				DA776BE01725CFDB00F9B4BC /* Default.png */,
-				DA776BE21725CFDB00F9B4BC /* Default@2x.png */,
-				DA776BE41725CFDB00F9B4BC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,10 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA776BD91725CFDB00F9B4BC /* InfoPlist.strings in Resources */,
-				DA776BE11725CFDB00F9B4BC /* Default.png in Resources */,
-				DA776BE31725CFDB00F9B4BC /* Default@2x.png in Resources */,
-				DA776BE51725CFDB00F9B4BC /* Default-568h@2x.png in Resources */,
-				DA776BE81725CFDB00F9B4BC /* MainStoryboard.storyboard in Resources */,
+				DAD94540180ED7BA0053499D /* Images.xcassets in Resources */,
+				DA776BE81725CFDB00F9B4BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +281,6 @@
 				DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */,
 				DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */,
 				DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */,
-				DA776C1217264B9B00F9B4BC /* Show.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +311,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DA776BE61725CFDB00F9B4BC /* MainStoryboard.storyboard */ = {
+		DA776BE61725CFDB00F9B4BC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA776BE71725CFDB00F9B4BC /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DA776C021725CFDC00F9B4BC /* InfoPlist.strings */ = {
@@ -403,9 +389,12 @@
 		DA776C0B1725CFDC00F9B4BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
 				INFOPLIST_FILE = "Gilligizer/Gilligizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,9 +403,12 @@
 		DA776C0C1725CFDC00F9B4BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
 				INFOPLIST_FILE = "Gilligizer/Gilligizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -475,6 +467,7 @@
 				DA776C0C1725CFDC00F9B4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA776C0D1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "GilligizerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +476,7 @@
 				DA776C0F1725CFDC00F9B4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
