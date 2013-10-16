@@ -13,7 +13,7 @@
 		BC2AB9CD162501D8000A9076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9CB162501D8000A9076 /* InfoPlist.strings */; };
 		BC2AB9CF162501D8000A9076 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9CE162501D8000A9076 /* main.m */; };
 		BC2AB9D3162501D8000A9076 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9D2162501D8000A9076 /* AppDelegate.m */; };
-		BC2AB9DC162501D8000A9076 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9DA162501D8000A9076 /* MainStoryboard.storyboard */; };
+		BC2AB9DC162501D8000A9076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2AB9DA162501D8000A9076 /* Main.storyboard */; };
 		BC2AB9DF162501D8000A9076 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2AB9DE162501D8000A9076 /* ViewController.m */; };
 		BC2AB9E7162501D8000A9076 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2AB9E6162501D8000A9076 /* SenTestingKit.framework */; };
 		BC2AB9E8162501D8000A9076 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2AB9C2162501D8000A9076 /* UIKit.framework */; };
@@ -44,7 +44,7 @@
 		BC2AB9D0162501D8000A9076 /* MarcoPollo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarcoPollo-Prefix.pch"; sourceTree = "<group>"; };
 		BC2AB9D1162501D8000A9076 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC2AB9D2162501D8000A9076 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC2AB9DB162501D8000A9076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BC2AB9DB162501D8000A9076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC2AB9DD162501D8000A9076 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BC2AB9DE162501D8000A9076 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC2AB9E5162501D8000A9076 /* MarcoPolloTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPolloTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 			children = (
 				BC2AB9D1162501D8000A9076 /* AppDelegate.h */,
 				BC2AB9D2162501D8000A9076 /* AppDelegate.m */,
-				BC2AB9DA162501D8000A9076 /* MainStoryboard.storyboard */,
+				BC2AB9DA162501D8000A9076 /* Main.storyboard */,
 				BC2AB9DD162501D8000A9076 /* ViewController.h */,
 				BC2AB9DE162501D8000A9076 /* ViewController.m */,
 				DAC56DE0180CA51600979110 /* Images.xcassets */,
@@ -227,7 +227,7 @@
 			files = (
 				BC2AB9CD162501D8000A9076 /* InfoPlist.strings in Resources */,
 				DAC56DE1180CA51600979110 /* Images.xcassets in Resources */,
-				BC2AB9DC162501D8000A9076 /* MainStoryboard.storyboard in Resources */,
+				BC2AB9DC162501D8000A9076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +295,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BC2AB9DA162501D8000A9076 /* MainStoryboard.storyboard */ = {
+		BC2AB9DA162501D8000A9076 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BC2AB9DB162501D8000A9076 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		BC2AB9EF162501D8000A9076 /* InfoPlist.strings */ = {
