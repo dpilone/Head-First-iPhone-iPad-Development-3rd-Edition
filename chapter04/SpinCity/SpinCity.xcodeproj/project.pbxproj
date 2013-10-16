@@ -13,7 +13,7 @@
 		BCC5830D16504B6800086810 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCC5830B16504B6800086810 /* InfoPlist.strings */; };
 		BCC5830F16504B6800086810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5830E16504B6800086810 /* main.m */; };
 		BCC5831316504B6800086810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5831216504B6800086810 /* AppDelegate.m */; };
-		BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831A16504B6800086810 /* MainStoryboard.storyboard */; };
+		BCC5831C16504B6800086810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC5831A16504B6800086810 /* Main.storyboard */; };
 		BCC5831F16504B6800086810 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5831E16504B6800086810 /* MasterViewController.m */; };
 		BCC5832216504B6800086810 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832116504B6800086810 /* DetailViewController.m */; };
 		BCC5832E1656969F00086810 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5832D1656969F00086810 /* Album.m */; };
@@ -33,7 +33,7 @@
 		BCC5831016504B6800086810 /* SpinCity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpinCity-Prefix.pch"; sourceTree = "<group>"; };
 		BCC5831116504B6800086810 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCC5831216504B6800086810 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BCC5831B16504B6800086810 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BCC5831B16504B6800086810 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCC5831D16504B6800086810 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		BCC5831E16504B6800086810 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BCC5832016504B6800086810 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				BCC5832D1656969F00086810 /* Album.m */,
 				BCC5831116504B6800086810 /* AppDelegate.h */,
 				BCC5831216504B6800086810 /* AppDelegate.m */,
-				BCC5831A16504B6800086810 /* MainStoryboard.storyboard */,
+				BCC5831A16504B6800086810 /* Main.storyboard */,
 				BCC5831D16504B6800086810 /* MasterViewController.h */,
 				BCC5831E16504B6800086810 /* MasterViewController.m */,
 				BCC5832016504B6800086810 /* DetailViewController.h */,
@@ -174,7 +174,7 @@
 			files = (
 				BCC5830D16504B6800086810 /* InfoPlist.strings in Resources */,
 				DAC56DDF180C9DEF00979110 /* Images.xcassets in Resources */,
-				BCC5831C16504B6800086810 /* MainStoryboard.storyboard in Resources */,
+				BCC5831C16504B6800086810 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,12 +206,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BCC5831A16504B6800086810 /* MainStoryboard.storyboard */ = {
+		BCC5831A16504B6800086810 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BCC5831B16504B6800086810 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
