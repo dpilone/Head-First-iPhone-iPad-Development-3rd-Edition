@@ -13,7 +13,7 @@
 		DA87D02C170F6534007D4CE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87D02A170F6534007D4CE9 /* InfoPlist.strings */; };
 		DA87D02E170F6534007D4CE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D02D170F6534007D4CE9 /* main.m */; };
 		DA87D032170F6534007D4CE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D031170F6534007D4CE9 /* AppDelegate.m */; };
-		DA87D03B170F6534007D4CE9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87D039170F6534007D4CE9 /* MainStoryboard.storyboard */; };
+		DA87D03B170F6534007D4CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87D039170F6534007D4CE9 /* Main.storyboard */; };
 		DA87D03E170F6534007D4CE9 /* InstaTwitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */; };
 		DA87D046170F6534007D4CE9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D045170F6534007D4CE9 /* SenTestingKit.framework */; };
 		DA87D047170F6534007D4CE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D021170F6534007D4CE9 /* UIKit.framework */; };
@@ -45,7 +45,7 @@
 		DA87D02F170F6534007D4CE9 /* InstaTwit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaTwit-Prefix.pch"; sourceTree = "<group>"; };
 		DA87D030170F6534007D4CE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA87D031170F6534007D4CE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA87D03A170F6534007D4CE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA87D03A170F6534007D4CE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA87D03C170F6534007D4CE9 /* InstaTwitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaTwitViewController.h; sourceTree = "<group>"; };
 		DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaTwitViewController.m; sourceTree = "<group>"; };
 		DA87D044170F6534007D4CE9 /* InstaTwitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaTwitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +119,7 @@
 			children = (
 				DA87D030170F6534007D4CE9 /* AppDelegate.h */,
 				DA87D031170F6534007D4CE9 /* AppDelegate.m */,
-				DA87D039170F6534007D4CE9 /* MainStoryboard.storyboard */,
+				DA87D039170F6534007D4CE9 /* Main.storyboard */,
 				DA87D03C170F6534007D4CE9 /* InstaTwitViewController.h */,
 				DA87D03D170F6534007D4CE9 /* InstaTwitViewController.m */,
 				DAC56DDA180C944C00979110 /* Images.xcassets */,
@@ -231,7 +231,7 @@
 			files = (
 				DA87D02C170F6534007D4CE9 /* InfoPlist.strings in Resources */,
 				DAC56DDB180C944C00979110 /* Images.xcassets in Resources */,
-				DA87D03B170F6534007D4CE9 /* MainStoryboard.storyboard in Resources */,
+				DA87D03B170F6534007D4CE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +299,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DA87D039170F6534007D4CE9 /* MainStoryboard.storyboard */ = {
+		DA87D039170F6534007D4CE9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA87D03A170F6534007D4CE9 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DA87D04E170F6534007D4CE9 /* InfoPlist.strings */ = {
