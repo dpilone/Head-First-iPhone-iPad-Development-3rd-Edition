@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA20739F180ECF6D00B15224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA20739E180ECF6D00B15224 /* Images.xcassets */; };
 		DA50BEA2173AFC8C0019907D /* PhoneBooth.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50BEA1173AFC8C0019907D /* PhoneBooth.m */; };
 		DA86FFBB17375E8F006E7598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86FFBA17375E8F006E7598 /* UIKit.framework */; };
 		DA86FFBD17375E8F006E7598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86FFBC17375E8F006E7598 /* Foundation.framework */; };
@@ -15,10 +16,7 @@
 		DA86FFC717375E8F006E7598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFC517375E8F006E7598 /* InfoPlist.strings */; };
 		DA86FFC917375E8F006E7598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86FFC817375E8F006E7598 /* main.m */; };
 		DA86FFCD17375E8F006E7598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86FFCC17375E8F006E7598 /* AppDelegate.m */; };
-		DA86FFCF17375E8F006E7598 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFCE17375E8F006E7598 /* Default.png */; };
-		DA86FFD117375E8F006E7598 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFD017375E8F006E7598 /* Default@2x.png */; };
-		DA86FFD317375E8F006E7598 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFD217375E8F006E7598 /* Default-568h@2x.png */; };
-		DA86FFD617375E8F006E7598 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFD417375E8F006E7598 /* MainStoryboard.storyboard */; };
+		DA86FFD617375E8F006E7598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA86FFD417375E8F006E7598 /* Main.storyboard */; };
 		DA86FFD917375E8F006E7598 /* RetroPhoneHunter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA86FFD717375E8F006E7598 /* RetroPhoneHunter.xcdatamodeld */; };
 		DA86FFDC17375E8F006E7598 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86FFDB17375E8F006E7598 /* MasterViewController.m */; };
 		DA86FFDF17375E8F006E7598 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86FFDE17375E8F006E7598 /* DetailViewController.m */; };
@@ -43,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA20739E180ECF6D00B15224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA50BEA0173AFC8C0019907D /* PhoneBooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneBooth.h; sourceTree = "<group>"; };
 		DA50BEA1173AFC8C0019907D /* PhoneBooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneBooth.m; sourceTree = "<group>"; };
 		DA86FFB717375E8F006E7598 /* RetroPhoneHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPhoneHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,10 +55,7 @@
 		DA86FFCA17375E8F006E7598 /* RetroPhoneHunter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroPhoneHunter-Prefix.pch"; sourceTree = "<group>"; };
 		DA86FFCB17375E8F006E7598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA86FFCC17375E8F006E7598 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA86FFCE17375E8F006E7598 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DA86FFD017375E8F006E7598 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DA86FFD217375E8F006E7598 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DA86FFD517375E8F006E7598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA86FFD517375E8F006E7598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA86FFD817375E8F006E7598 /* RetroPhoneHunter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetroPhoneHunter.xcdatamodel; sourceTree = "<group>"; };
 		DA86FFDA17375E8F006E7598 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		DA86FFDB17375E8F006E7598 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
@@ -141,7 +137,7 @@
 			children = (
 				DA86FFCB17375E8F006E7598 /* AppDelegate.h */,
 				DA86FFCC17375E8F006E7598 /* AppDelegate.m */,
-				DA86FFD417375E8F006E7598 /* MainStoryboard.storyboard */,
+				DA86FFD417375E8F006E7598 /* Main.storyboard */,
 				DA86FFDA17375E8F006E7598 /* MasterViewController.h */,
 				DA86FFDB17375E8F006E7598 /* MasterViewController.m */,
 				DA86FFDD17375E8F006E7598 /* DetailViewController.h */,
@@ -149,6 +145,7 @@
 				DA86FFD717375E8F006E7598 /* RetroPhoneHunter.xcdatamodeld */,
 				DA50BEA0173AFC8C0019907D /* PhoneBooth.h */,
 				DA50BEA1173AFC8C0019907D /* PhoneBooth.m */,
+				DA20739E180ECF6D00B15224 /* Images.xcassets */,
 				DA86FFC317375E8F006E7598 /* Supporting Files */,
 			);
 			path = RetroPhoneHunter;
@@ -161,9 +158,6 @@
 				DA86FFC517375E8F006E7598 /* InfoPlist.strings */,
 				DA86FFC817375E8F006E7598 /* main.m */,
 				DA86FFCA17375E8F006E7598 /* RetroPhoneHunter-Prefix.pch */,
-				DA86FFCE17375E8F006E7598 /* Default.png */,
-				DA86FFD017375E8F006E7598 /* Default@2x.png */,
-				DA86FFD217375E8F006E7598 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,10 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA86FFC717375E8F006E7598 /* InfoPlist.strings in Resources */,
-				DA86FFCF17375E8F006E7598 /* Default.png in Resources */,
-				DA86FFD117375E8F006E7598 /* Default@2x.png in Resources */,
-				DA86FFD317375E8F006E7598 /* Default-568h@2x.png in Resources */,
-				DA86FFD617375E8F006E7598 /* MainStoryboard.storyboard in Resources */,
+				DA20739F180ECF6D00B15224 /* Images.xcassets in Resources */,
+				DA86FFD617375E8F006E7598 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,12 +325,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DA86FFD417375E8F006E7598 /* MainStoryboard.storyboard */ = {
+		DA86FFD417375E8F006E7598 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA86FFD517375E8F006E7598 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DA86FFF017375E8F006E7598 /* InfoPlist.strings */ = {
@@ -413,11 +405,13 @@
 		DA86FFF917375E8F006E7598 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetroPhoneHunter/RetroPhoneHunter-Prefix.pch";
 				INFOPLIST_FILE = "RetroPhoneHunter/RetroPhoneHunter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -427,10 +421,12 @@
 		DA86FFFA17375E8F006E7598 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetroPhoneHunter/RetroPhoneHunter-Prefix.pch";
 				INFOPLIST_FILE = "RetroPhoneHunter/RetroPhoneHunter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
