@@ -50,6 +50,7 @@
     NSInteger count = [[self.fetchedResultsController sections][0] numberOfObjects];
     show.episodeID = [NSNumber numberWithInteger:count];
     show.showTime = [NSDate dateWithTimeIntervalSinceNow:(86400 * count)];
+    show.firstRun = [NSNumber numberWithBool:FALSE];
 
     // Save the context.
     NSError *error = nil;
