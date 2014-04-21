@@ -203,6 +203,7 @@
 		DA87D016170F6534007D4CE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Element 84, LLC";
 			};
